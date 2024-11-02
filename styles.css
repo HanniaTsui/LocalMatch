@@ -1,0 +1,544 @@
+:root {
+    --color-primario: #2D5CEA;
+    --color-fondoGris:#B9B9B9;
+    --color-hover:#585353;
+    --color-grisSecciones:#D9D9D9;
+    
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; 
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*====landing page====*/
+    #contenedor {
+        display: flex;
+        height: 100vh; 
+        background: var(--color-primario);
+    }
+
+        #parteIzq {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%; 
+            color: #fff;
+        }
+
+            #presentacion {
+                margin: 90px;
+                text-align: center;
+            }
+            #parteIzq a{
+                text-decoration: none;
+                font-weight: bold;
+               
+                color: black;
+                background: white;
+                padding: 10px 80px;
+                border-radius: 20px;
+                transition: background 0.4s ease, color 0.3s ease, transform 0.3s ease;
+            }
+                #parteIzq   a:hover{
+                    background: #585353;
+                    color: white;
+                    
+                }
+
+
+        #parteDerecha {
+            width: 50%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #parteDerecha img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+            }
+/* =====Elementos  Generales   -gen ====*/
+    .contenedor-gen{/* contenedor que contiene al header general y al panelcentral*/
+        display: flex;
+        flex-direction: column;
+    }
+    .header-gen{/*contenedor general utilizado en la mayoria de las paginas */
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0px 20px;
+        height: 70px;
+        background-color: var(--color-primario);
+    }
+        .logoHeader-gen {
+            height: 60px;
+            padding: 0px  20px;
+
+            
+        }
+        .derechaHeader-gen{ /*contenedor invidible para los botones del header (con este contenedor podremos dividir en dos en header para usar justificacion )*/
+            background: var(--color-primario);
+        }
+           
+            .btnAcceder-gen{
+                
+                padding: 5px 15px; 
+                background-color: #f0f0f0; 
+                color: #000; 
+                
+                font-weight: bold;
+                border-radius: 15px; 
+                text-decoration: none; 
+                border: 1px solid #ccc; 
+                
+                
+                gap: 10px; /* Espacio entre el texto y el icono */
+                font-size: 14px;
+                transition: background-color 0.3s ease,color 0.3s ease; 
+            }
+                .btnAcceder-gen:hover{
+                    background: #585353;
+                    color: white;
+                }
+            .btnBarras-gen{
+                background-color: #fff;
+                padding: 5px 9px;
+                border-radius: 100%;
+                margin: 0px 15px;
+                transition: background 0.3s ease,color 0.3s ease;
+            }
+            .btnBarras-gen:hover{
+                background: #585353;
+                    color: white;
+            }
+
+    .panelCentral-gen{/*es el panel blanco donde va el contenido */
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        min-height: 100vh; 
+    }
+    .inputText-gen{
+        
+       width: 350px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #d3d3d3;
+        font-size: 16px;
+        color: #333;
+        
+    }
+    
+    #parteInferiorGrid-gen{
+        display: grid;
+        grid-template-columns: repeat( auto-fill,minmax(300px,1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-right: 20px;
+    }
+        .localCard-gen{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+    
+        }
+            .localCard-gen img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0;
+    
+            }
+            .localCard-gen h3{
+                font-size: 20px;
+                color: #555;
+                margin: 10px 0 5px;
+    
+            }
+            .localCard-gen p{
+                font-size: 14px;
+                color: #777;
+                margin: 5px 0;
+            }
+            .fa-starIcon-card{
+                color: yellow;
+            }
+
+         .localCard-gen:hover{
+            transform: scale(1.05);
+         }   
+
+         .btnSubir a {
+            display: inline-block;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+            width: 30px; /* Tamaño del botón */
+            height: 30px; /* Tamaño del botón */
+            
+        }
+        
+        .btnSubir img.subir-gen {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y cubra el contenedor */
+        }
+        
+/*====login====*/
+
+    body.login .panelCentral-gen{/*parte blanca del login*/
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+    }
+    .recuadroLogin{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: 550px;
+        width: 450px;
+        background: var(--color-fondoGris);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 2);
+        border-radius: 20px;
+        border: 1px solid black;
+        
+    }
+        .formularioLogin{
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido horizontalmente */
+            gap: 15px; 
+        }
+            #olvidasteContraseña{
+                font-size: 12px;
+                transition: color 0.3s ease;
+            }
+                #olvidasteContraseña:hover{
+                    color: white;
+                }
+            #btnIniciarSesion{
+                background-color:var(--color-primario) ;
+                color: white;
+                padding: 10px 130px;
+                border-radius: 20px;
+                border: 1px solid black;
+                transition: background 0.3s ease;
+                margin-top: 20px;
+            }
+                #btnIniciarSesion:hover{
+                    background:var(--color-hover);
+                }
+
+            #btnGoogle{
+                display: flex;
+                background-color:#d3d3d3 ;
+                padding: 10px 85px;
+                border-radius: 20px;
+                border: 1px solid black;
+                gap: 25px;
+                transition: background 0.3s ease,color 0.3s ease;
+            }
+                #btnGoogle:hover{
+                    background: var(--color-hover);
+                    color: white;
+                }
+            #btnFacebook{
+                display: flex;
+                background-color:#d3d3d3 ;
+                padding: 10px 80px;
+                border-radius: 20px;
+                border: 1px solid black;
+                gap: 15px;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+                #btnFacebook:hover{
+                    background: var(--color-hover);
+                    color: white;
+                }
+            #enlaceRegistro{
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+                #enlaceRegistro:hover{
+                    color: white;
+                }
+/*=====Registro=====*/
+body.registro .panelCentral-gen{
+    justify-content: center;
+        align-items: center;
+      
+}
+    #recuadroRegistro{
+        display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: 450px;
+            background: var(--color-fondoGris);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 2);
+            border-radius: 20px;
+            border: 1px solid black;
+
+    }
+        .formularioRegistro{
+            display: flex;
+                flex-direction: column;
+                align-items: center; /* Centra el contenido horizontalmente */
+                gap: 15px; 
+        }
+            #btnRegistrarte{
+                background-color:var(--color-primario) ;
+                font-weight: bold;
+                color: white;
+                padding: 10px 130px;
+                border-radius: 20px;
+                border: 1px solid black;
+                transition: background 0.3s ease;
+            }
+                #btnRegistrarte:hover{
+                    background:var(--color-hover);   
+                }
+            #terminosCondiciones{
+                font-size: 12px;
+                margin: 0px;
+            }
+                #terminosEnlace{
+                    text-decoration: underline;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                    #terminosEnlace:hover{
+                        color: white;
+                    }
+                #politicaEnlace{
+                    text-decoration: underline;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                    #politicaEnlace:hover{
+                        color: white;
+                        
+                    }
+            #enlaceLogin{
+                font-weight: bold;
+                transition: color 0.3s ease;
+
+            }
+                #enlaceLogin:hover{
+                    color: white;
+                }
+/*====Inicio====*/
+#parteSuperior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 25vh;
+    justify-content: center;
+
+}
+
+body.login .panelCentral-gen{
+    justify-content: center;
+        align-items: center;
+      
+}
+
+    #contenedor-busqueda{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+        .barraBusqueda{
+            display: flex;
+            width: 500px;
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+            #inputBusqueda{
+                border: none;
+                outline: none;
+                flex: 1; /* para ajustarse al tamaño del contenedor*/
+                padding-left: 10px;
+                font-size: 16px;
+                background: none;
+                border-right: 1px solid #ccc;
+
+            }
+                #buscar{
+                    background: none;
+                    font-size: 17px;
+                    border: none;
+                    cursor: pointer;
+                    transition: font-size 0.3s ease;
+                    padding: 0 15px;
+                }
+                #buscar:hover{
+                    font-size: 23px;
+                }
+
+        #calendario{
+            background: white;
+            padding: 8px 30px;
+            border-radius: 20px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background 0.3s ease,color 0.3s ease;
+       
+        }
+            #calendario i{
+                font-size: 25px;
+            }
+            #calendario:hover{
+                background: var(--color-hover);
+                color: white;
+            }
+        #filtro{
+            padding: 8px 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+            #filtro i{
+                font-size: 25px;
+                
+                
+            }
+            #filtro:hover{
+                background: var(--color-hover);
+                color: white;
+            }
+
+    #contenedorSelecciones{
+        display: flex;
+        
+    
+
+    }
+        .secciones{
+            display: inline-block;
+            background: var(--color-grisSecciones);
+            padding: 10px 30px;
+            border-radius: 20px;
+            margin: 0px 10px 10px 10px;
+            transition: background 0.3s ease, color 0.3s ease;
+
+            
+        }
+            .secciones:hover{
+                background: var(--color-hover);
+                color: white;
+            }
+        #contenedorSeleccion hr{
+            background-color: var(--color-primario);
+            height: 1.5px;
+            border: none;
+        }
+/*====Mis datos====*/
+.panelCentral-Mdatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+    .areaDatos{
+        
+        width: 60%;
+        height: 200px;
+        padding: 0px 30px 0px 30px;
+        border-radius: 10px;
+        border: 1px solid var(--color-hover);
+       
+        
+
+    } 
+        .inputGeneral-Mdatos{
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--color-hover);
+            padding-left: 5px;
+          
+        }
+        #nombreTxt-Mdatos{
+            width: 100%;
+        }
+
+        .correoSeccion{
+            width: 50%;
+        }
+            #correoTxt-Mdatos{
+                width: 100%;
+               
+            }
+        .telefonoSeccion{
+            width: 50%;
+        }
+            #telefonoTxt-Mdatos{
+                width: 100%;
+            }
+        .areaDatos p{
+            color: black;
+            margin-bottom: 0px;
+            font-size: 18px;
+            
+        }
+        .contenedorInputHorizontal{
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            
+        }
+    .areaPagos{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        min-height: 50px;
+        height: auto;
+        padding: 0px 30px 0px 30px;
+        border-radius: 10px;
+        border: 1px solid var(--color-hover);
+    }
+        .areaInferiorPagos{
+           
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        
+
+            
+
+        
+        
+
+
