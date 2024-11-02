@@ -58,7 +58,7 @@
         justify-content: center;
         position: relative;
         align-items: center;
-        flex-wrap: wrap;
+      /*  flex-wrap: wrap;*/
         
     }
     .inicio .header-gen{
@@ -126,6 +126,22 @@
     }
 
      /* ===== misDatos.html ======*/
+     body.misDatos{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .misDatos .contenedor-gen{
+        justify-content: center;
+        position: relative;
+        align-items: center;
+      /*  flex-wrap: wrap;*/
+        
+    }
+    .misDatos .header-gen{
+        width: 100%;
+    }
+
      .areaDatos form .contenedorInputHorizontal{
         display: flex;
         flex-direction: column;
