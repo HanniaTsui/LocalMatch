@@ -49,11 +49,13 @@
 /* ===== inicio.html====*/
     body.inicio{
         width: 100%;
+        overflow-x: hidden
     }
     .inicio .contenedor-gen{
         justify-content: center;
         position: relative;
         align-items: center;
+        flex-wrap: wrap;
         
     }
     .inicio .header-gen{
@@ -61,7 +63,7 @@
     }
     .inicio .panelCentral-gen{
         margin:0;
-        padding: 0 20px;
+       /* padding: 0 20px;*/
         width: 100%;
     }
     .inicio #parteSuperior{
@@ -76,8 +78,10 @@
         align-items: center;
         flex-wrap: wrap;
     }
-    .inicio #contenedorSeleccion .secciones{
-        
+    
+
+    #contenedor-busqueda{
+        transform: scale(0.7);
     }
 
     .inicio #calendario{
@@ -145,4 +149,12 @@
         margin-bottom: 60px;
         transform: scale(0.8);
     }
+
+    /* ===== inicio.html ======*/
+
+    .inicio #contenedorSeleccion .secciones{
+        width: 20px;
+        font-size: 12px;
+    }
+
 }
