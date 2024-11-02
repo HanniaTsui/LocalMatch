@@ -143,6 +143,6 @@
     }
     #recuadroRegistro, .recuadroLogin{
         margin-bottom: 60px;
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
