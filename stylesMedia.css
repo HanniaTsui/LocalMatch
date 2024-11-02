@@ -49,15 +49,10 @@
 /* ===== inicio.html====*/
     body.inicio{
         width: 100%;
-        overflow-x: hidden
+        overflow-x: hidden;
     }
 
-    body.login{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     .inicio .contenedor-gen{
         justify-content: center;
         position: relative;
@@ -104,6 +99,15 @@
         background-color: var(--color-primario);
 
     }
+    body.login{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+
     .login .contenedor-gen .header-gen, .registro .contenedor-gen .header-gen{
         justify-content: center;
         height: 200px;
@@ -153,8 +157,9 @@
         
     }
     #recuadroRegistro, .recuadroLogin{
-        margin-bottom: 60px;
+       
         transform: scale(0.8);
+        margin-top: -70px;
     }
 
     /* ===== inicio.html ======*/
