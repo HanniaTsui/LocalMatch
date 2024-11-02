@@ -164,9 +164,6 @@
 
 }
 
-@media screen and (max-width: 850px) {
-    
-}
 
 @media screen  and (max-width: 460px){
 
@@ -220,4 +217,10 @@
 
 
     /* ===== misDatos.html ======*/
+    .divCards{
+        width: 90%;
+    }
+    .btnPago{
+        padding: 10px;
+    }
 }
