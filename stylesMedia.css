@@ -51,6 +51,13 @@
         width: 100%;
         overflow-x: hidden
     }
+
+    body.login{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .inicio .contenedor-gen{
         justify-content: center;
         position: relative;
@@ -113,7 +120,7 @@
         height: 120px;
     }
     #recuadroRegistro{
-        margin-bottom: 60px;
+       /* margin-bottom: 60px;*/
     }
     
 }
