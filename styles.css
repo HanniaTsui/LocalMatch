@@ -581,6 +581,26 @@ body.login .panelCentral-gen{
             margin-right: 0;
          }
 
+          /* ===== misFavoritos.html ======*/
+          .panelCentral-favoritos{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 50px 170px;
+            align-items: center;
+            color: var(--color-gris-texto);
+            max-width: 100%;
+         }
+         .misFavoritos #parteInferiorGrid-gen{
+            max-width: 100%;
+            margin-right: 0;
+         }
+         .fa-heart{
+            color: red;
+            font-size: 25px;
+         }
+
+
 
 
 

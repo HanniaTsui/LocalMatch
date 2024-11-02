@@ -170,6 +170,13 @@
         padding: 50px;
      }
 
+     /* ===== misFavoritos.html ======*/
+    .misFavoritos .panelCentral-favoritos{
+        max-width: 100%;
+        margin-right: 0;
+        padding: 50px;
+     }
+
 }
 
 
@@ -236,4 +243,9 @@
     .misReservas .panelCentral-Reservas{
         padding: 20px 0;
      }
+     /* ===== misFavoritos.html ======*/
+     .misFavoritos .panelCentral-favoritos{
+        padding: 20px 0;
+     }
 }
+
