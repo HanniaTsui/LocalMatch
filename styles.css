@@ -288,6 +288,7 @@ a{
 body.registro .panelCentral-gen{
     justify-content: center;
         align-items: center;
+        margin: 25px 0;
       
 }
     #recuadroRegistro{
@@ -737,7 +738,7 @@ body.login .panelCentral-gen{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1; 
 }
 
 .local #contenedor-busqueda{
@@ -745,7 +746,7 @@ body.login .panelCentral-gen{
     top: 0;
     left: 10%;
     width: 80%;
-    z-index: 10002; 
+    z-index: 2; 
     margin-top: 10px;
     justify-content: center;
 }
