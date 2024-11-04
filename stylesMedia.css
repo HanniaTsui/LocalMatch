@@ -239,6 +239,7 @@
      .local .botonesReservar-compartir-like {
         justify-content: space-between;
         column-gap: normal;
+        transform: scale(0.9);
      }
 
      .local .botonesReservar-compartir-like .btn-like i, .local .botonesReservar-compartir-like .btn-compartir img{
@@ -287,6 +288,10 @@
             width: 100%;
             border-radius: 25px;
         }
+
+        .panelSuperior-derecha-info{
+            transform: scale(0.8);
+        }
 }
 
 @media screen and (min-width: 781px ) and (max-width:1380px) {
@@ -328,6 +333,7 @@
     .categorias-filtro{
         margin-left: 10px;
     }
+    
 }
 
 
@@ -442,4 +448,15 @@
     }
 
 }
+
+
+@media  screen and (max-width: 520px){
+    .local .panelSuperior{
+        flex-direction: column;
+    }
+    .local .panelSuperior .panelSuperior-izq, .local .panelSuperior .panelSuperior-derecha{
+        width: 100%;
+    }
+}
+    
 
