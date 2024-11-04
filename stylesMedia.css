@@ -460,3 +460,69 @@
 }
     
 
+/*====Styles para movil - local*/
+.local .panelInfo-movil{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.btnFechaFlex-movil{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 400px;
+    align-items: flex-start;
+    
+}
+.local .panelInfo-movil h2{
+text-align: center;
+ width: 100%;
+ margin-top: 20px;
+ font-weight: bold;
+}
+.local .info-opiniones {
+    width: 80%;
+}
+.local .contenedor-mapa-movil{
+    width: 100%;
+}
+.local .panelInfo-movil h3{
+    font-weight: bold;
+}
+.local .panelInfo-movil .iconPrecio{
+    width: 30px;
+}
+.horariosPrecios-movil{
+    width: 100%;
+}
+
+.disponibilidad-movil, .divBtn-movil{
+    display: flex;
+    width: 100%;
+}
+
+.divBtn-movil{
+    justify-content: center;
+    border-top: 1px solid gray;
+    padding:  5px 0;
+}
+
+.btnReservar-movil{
+    background-color: #4563C0;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 60%;
+}
+.contacto-movil .infoContacto{
+    display: flex;
+    flex-direction: column;
+}
+.btnSuperior-movil{
+width: 30px;
+ border-radius: 50%;
+ 
+}
+.btnSuperior-movil i{
+    font-size: 15px;
+}
