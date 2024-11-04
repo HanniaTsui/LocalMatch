@@ -457,6 +457,13 @@
     .local .panelSuperior .panelSuperior-izq, .local .panelSuperior .panelSuperior-derecha{
         width: 100%;
     }
+    .local .contenedor-gen{
+        display: none;
+    }
+    .local .versionMovil-local{
+        display: block;
+        top:-30px;
+    }
 }
     
 
@@ -505,6 +512,10 @@ text-align: center;
     justify-content: center;
     border-top: 1px solid gray;
     padding:  5px 0;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    background-color: white;
 }
 
 .btnReservar-movil{
@@ -525,4 +536,16 @@ width: 30px;
 }
 .btnSuperior-movil i{
     font-size: 15px;
+}
+.panelBtn-movil{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    top:35px;
+    padding: 0 10px;
+}
+.versionMovil-local{
+    position: relative;
+    z-index: 1;
 }
