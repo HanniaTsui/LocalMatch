@@ -457,13 +457,7 @@
     .local .panelSuperior .panelSuperior-izq, .local .panelSuperior .panelSuperior-derecha{
         width: 100%;
     }
-    .local .contenedor-gen{
-        display: none;
-    }
-    .local .versionMovil-local{
-        display: block;
-        top:-30px;
-    }
+    
 }
     
 
@@ -503,8 +497,20 @@ text-align: center;
     width: 100%;
 }
 
-.disponibilidad-movil, .divBtn-movil{
+.disponibilidad-movil{
     display: flex;
+    width: 100%;
+}
+.local .versionMovil-local .accordion-body{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+}
+ .precio-item{
+    width: 80%;
+}
+.local .versionMovil-local .accordion-collapse, .versionMovil-local{
     width: 100%;
 }
 
@@ -513,12 +519,14 @@ text-align: center;
     border-top: 1px solid gray;
     padding:  5px 0;
     position: fixed;
+    display: flex;
+    width: 100%;
     z-index: 2;
     bottom: 0;
     background-color: white;
 }
 
-.btnReservar-movil{
+.btnReservar-movil, .btnFecha-movil{
     background-color: #4563C0;
     color: white;
     border-radius: 15px;
@@ -548,4 +556,18 @@ width: 30px;
 .versionMovil-local{
     position: relative;
     z-index: 1;
+}
+
+@media screen and (min-width: 340px) and (max-width: 519px) {
+    .local .contenedor-gen, .local .btnSubir{
+        display: none;
+    }
+    .local .versionMovil-local{
+        display: block;
+        top:-30px;
+        min-width: 400px;
+    }
+    .local, .local .versionMovil-local{
+        width: 100vw;
+    }
 }
