@@ -592,11 +592,11 @@ width: 30px;
     .local .versionMovil-local{
         display: block;
         top:-30px;
-        min-width: 420px;
+       /* min-width: 420px;*/
+        position: fixed;
+        width: 100%;
     }
-    .local, .local .versionMovil-local{
-        width: 100vw;
-    }
+    
     .card-movil{
         width: 80%;
     }
